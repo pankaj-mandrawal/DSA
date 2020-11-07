@@ -31,8 +31,7 @@ int main(void) {
   }
   dfs(adj, d, 0, -1, 0);
   for (int i = 0; i < n; ++i) {
-  	cout << d[i] << ' ';
+  	cout << d[i] << " \n"[i == n - 1];
   }
-  cout << '\n';
   return 0;
 }
